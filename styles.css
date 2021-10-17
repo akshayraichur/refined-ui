@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.container-lg {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container-md {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.container-sm {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.btn {
+	border-radius: 10px;
+	padding: 0.8rem 2.5rem;
+	font-size: 1rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	margin: 0.2rem;
+}
+
+.btn:hover {
+	background-color: rgb(231, 231, 231);
+	color: black;
+	transform: translateY(-7px);
+}
+
+.btn-lg {
+	border-radius: 10px;
+	padding: 1rem 3.5rem;
+	font-size: 1.5rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+}
+
+.btn-lg:hover {
+	background-color: rgb(231, 231, 231);
+	color: black;
+	transform: translateY(-7px);
+}
+
+.btn-sm {
+	border-radius: 10px;
+	padding: 0.8rem 1.5rem;
+	font-size: 0.8rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+}
+
+.btn-sm:hover {
+	background-color: rgb(231, 231, 231);
+	color: black;
+	transform: translateY(-7px);
+}
+
+.btn-brown {
+	background-color: #ca6702;
+	color: white;
+}
+
+.btn-brown:hover {
+	background-color: #bb3e03;
+	box-shadow: 0px 5px 20px #e2a588;
+	color: #fff;
+}
+
+.btn-primary {
+	background-color: #0a9396;
+	color: white;
+}
+
+.btn-primary:hover {
+	background-color: rgb(10, 131, 133);
+	box-shadow: 0px 5px 20px rgb(26, 204, 207);
+	color: #fff;
+}
+
+.btn-warning {
+	background-color: #ffb703;
+	color: white;
+}
+
+.btn-warning:hover {
+	background-color: #fcbf49;
+	box-shadow: 0px 5px 20px #fcbf49;
+	color: #fff;
+}
+
+.btn-success {
+	background-color: #99d98c;
+	color: white;
+}
+
+.btn-success:hover {
+	background-color: #75c465;
+	box-shadow: 0px 5px 20px #83b977;
+	color: white;
+}
+
+.alert {
+	background-color: rgba(187, 62, 3, 0.4);
+	padding: 0.9rem 0.9rem;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 599px) {
+	.container-lg,
+	.container-md,
+	.container-sm {
+		width: 90%;
+	}
+}
