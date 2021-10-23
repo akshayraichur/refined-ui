@@ -7,6 +7,51 @@
 	transition: all 0.3s ease 0s;
 }
 
+/* LInks to good color pallets : */
+/* 
+ * https://colorhunt.co/palette/0820322c394b334756ff4c29
+ * https://colorhunt.co/palette/14285027496d0c7b9300a8cc
+ * https://colorhunt.co/palette/e7d9ea11698e19456b16c79a
+ * https://colorhunt.co/palette/413c694a47a3709fb0a7c5eb
+ * https://colorhunt.co/palette/ffb319ffe194e8f6efb8dfd8
+ * https://colorhunt.co/palette/23049daa2ee6ff79cdffdf6b
+*/
+
+body {
+	background-color: #444;
+}
+
+/*
+background-color: rgba(187, 62, 3, 0.4);
+	border: 1px solid rgba(206, 68, 3, 0.4);
+	color: rgb(155, 51, 3);
+*/
+:root {
+	--primary-color: #35b0cc;
+	--primary-color-backdrop: #0c7b93;
+	--primary-color-shadow: #27496d;
+	--primary-color-light: #69dadb;
+
+	/* Brown */
+	--brown-color: #ca6702;
+	--brown-color-backdrop: #ec7616;
+	--brown-color-shadow: #e2a588;
+
+	/* Yellow Color */
+	--yellow-color: #ffb703;
+	--yellow-color-backdrop: #fab221;
+	--yellow-color-shadow: #fcbf49;
+	--yellow-text-color: yellow;
+
+	/* Green color */
+	--green-color: #99d98c;
+	--green-color-backdrop: #75c465;
+	--green-color-shadow: #83b977;
+	--green-text-color: rgb(63, 145, 47);
+
+	--default-border-color: rgb(204, 204, 204);
+}
+
 .container-lg {
 	width: 80%;
 	margin: 0 auto;
@@ -75,77 +120,77 @@
 }
 
 .btn-brown {
-	background-color: #ca6702;
+	background-color: var(--brown-color);
 	color: white;
 }
 
 .btn-brown:hover {
-	background-color: #bb3e03;
-	box-shadow: 0px 5px 20px #e2a588;
+	background-color: var(--brown-color-backdrop);
+	box-shadow: 0px 5px 20px var(--brown-color-shadow);
 	color: #fff;
 }
 
 .btn-primary {
-	background-color: #0a9396;
+	background-color: var(--primary-color);
 	color: white;
 }
 
 .btn-primary:hover {
-	background-color: rgb(10, 131, 133);
-	box-shadow: 0px 5px 20px rgb(26, 204, 207);
+	background-color: var(--primary-color-backdrop);
+	box-shadow: 0px 5px 20px var(--primary-color-shadow);
 	color: #fff;
 }
 
 .btn-warning {
-	background-color: #ffb703;
+	background-color: var(--yellow-color);
 	color: white;
 }
 
 .btn-warning:hover {
-	background-color: #fcbf49;
-	box-shadow: 0px 5px 20px #fcbf49;
+	background-color: var(--yellow-color-backdrop);
+	box-shadow: 0px 5px 20px var(--yellow-color-shadow);
 	color: #fff;
 }
 
 .btn-success {
-	background-color: #99d98c;
+	background-color: var(--green-color);
 	color: white;
 }
 
 .btn-success:hover {
-	background-color: #75c465;
-	box-shadow: 0px 5px 20px #83b977;
+	background-color: var(--green-color-backdrop);
+	box-shadow: 0px 5px 20px var(--green-color-shadow);
 	color: white;
 }
 
 .alert {
 	padding: 0.9rem 0.9rem;
 	border-radius: 5px;
-	border: 1px solid rgb(204, 204, 204);
+	border: 1px solid var(--default-border-color);
 }
 
 .alert-primary {
-	background-color: rgba(16, 203, 206, 0.4);
-	border: 1px solid rgba(14, 183, 185, 0.4);
-	color: rgb(13, 136, 138);
+	background-color: var(--primary-color-light);
+	border: 1px solid var(--primary-color-backdrop);
+	color: var(--primary-color-backdrop);
 }
 
 .alert-brown {
-	background-color: rgba(187, 62, 3, 0.4);
-	border: 1px solid rgba(206, 68, 3, 0.4);
-	color: rgb(155, 51, 3);
+	background-color: var(--brown-color-shadow);
+	border: 1px solid var(--brown-color-backdrop);
+	color: var(--brown-color);
 }
 
 .alert-warning {
-	background-color: rgba(252, 191, 73, 0.4);
-	border: 1px solid rgba(250, 196, 88, 0.4);
-	color: rgb(194, 137, 23);
+	background-color: var(--yellow-color);
+	border: 1px solid var(--yellow-color-backdrop);
+	color: var(--yellow-text-color);
 }
 
 .alert-success {
-	background-color: rgba(117, 196, 101, 0.4);
-	border: 1px solid rgba(142, 221, 126, 0.4);
-	color: rgb(63, 145, 47);
+	background-color: var(--green-color);
+	border: 1px solid var(--green-color-backdrop);
+	color: var(--green-text-color);
 }
 
 .shd {
